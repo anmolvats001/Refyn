@@ -1,0 +1,33 @@
+_format_version: "3.0"
+
+services:
+  - name: auth-service
+    url: http://authservice:8086
+    routes:
+      - name: auth-route
+        paths:
+          - /api/v1/auth
+        strip_path: false
+  - name: job-service
+    url: http://jobservice:8088
+    routes:
+      - name: job-route
+        paths:
+          - /api/v1/jobs
+        strip_path: false
+
+  - name: application-service
+    url: http://applicationservice:8089
+    routes:
+      - name: application-route
+        paths:
+          - /api/v1/application
+        strip_path: false
+
+  - name: user-service
+    url: http://userservice:8087
+    routes:
+      - name: user-route
+        paths:
+          - /api/v1/user
+        strip_path: false
