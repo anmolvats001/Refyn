@@ -59,7 +59,7 @@ Five independently deployable microservices, each owning its own domain:
 
 ```bash
 # Clone the repo
-git clone <repo-url>
+git clone https://github.com/anmolvats001/Refyn.git
 cd refyn
 
 # Start all services, Kafka, and Kong via Docker Compose
@@ -67,13 +67,6 @@ docker-compose up --build
 
 # Services will be available behind Kong at http://localhost:<gateway-port>
 ```
-
-## Exploring the API
-
-Since there's no UI, the fastest way to see the system in action is the Postman collection:
-
-- **Postman Collection**: `<add link here>`
-- Covers the full flow: register → login → post a job → apply → trigger a notification event via Kafka
 
 ## What This Project Demonstrates
 
